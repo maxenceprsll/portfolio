@@ -39,7 +39,7 @@ li {
 
 a {
     text-decoration: none;
-    color: var(--black-color);
+    color: var(--tertiary-color);
 }
 
 header, section, footer{
@@ -161,10 +161,23 @@ nav a:hover {
     gap: 20px;
 }
 
-.two-images li {
+.one-image {
     display: flex;
-    align-items: flex-start;
+}
+
+.one-image a {
+    text-decoration: underline;
+}
+
+.two-images .one-image {
+    display: flex;
+    align-items: center;
     width: calc(50% - 10px);
+}
+
+.one-image img {
+    width: 520px;
+    border-radius: 7px;
 }
 
 .two-images img {
@@ -173,19 +186,21 @@ nav a:hover {
     max-width: 200px;
     margin-right: 20px;
     border-radius: 7px;
+    align-self: center;
 }
 
-.two-images div {
+.one-image div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
-.two-images p {
+.one-image p {
     margin: 0;
 }
 
 @media (max-width: 600px) {
-    .two-images li {
+    .two-images .one-image {
         width: 100%;
     }
 }
