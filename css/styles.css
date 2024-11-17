@@ -58,6 +58,10 @@ mark {
     border-radius: 6px;
 }
 
+strong {
+    font-weight: 900;
+}
+
 /* Images */
 .logo {
     width: 160px;
@@ -164,8 +168,9 @@ nav a:hover {
 }
 
 .two-images img {
-    width: 100px;
+    width: 150px;
     margin-right: 20px;
+    border-radius: 7px;
 }
 
 .two-images div {
