@@ -163,6 +163,7 @@ nav a:hover {
 
 .one-image {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .one-image a {
@@ -176,7 +177,9 @@ nav a:hover {
 }
 
 .one-image img {
-    width: 520px;
+    width: 40%;
+    min-width: 200px;
+    max-width: 680px;
     border-radius: 7px;
 }
 
@@ -201,6 +204,9 @@ nav a:hover {
 
 @media (max-width: 600px) {
     .two-images .one-image {
+        width: 100%;
+    }
+    .one-image img {
         width: 100%;
     }
 }
