@@ -1,0 +1,200 @@
+/* Début de la feuille de style */
+
+:root {
+    --primary-color: #f5f5f5;
+    --secondary-color: #cfe2f4;
+    --tertiary-color: #1e3653;
+    --gray-color: #9f9f9f;
+    --black-color: #212121;
+}
+
+/* Classes de thèmes */
+
+.primary-style {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+.secondary-style {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.tertiary-style {
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+/* Global */
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+header, section, footer{
+    padding: 1em;
+    padding-left: 50px;
+}
+
+div {
+    padding: 1.5em 0;
+}
+
+mark {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 0 0.1em;
+    border-radius: 6px;
+}
+
+/* Images */
+.logo {
+    width: 160px;
+}
+
+/* Titres */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+    padding: 5vh 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+p {
+    font-weight: normal;
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: var(--tertiary-color);
+    transition: background-color 0.5s ease;
+}
+
+.sticky {
+    background-color: var(--black-color);
+    transition: background-color 0.5s ease;
+}
+
+nav .logo {
+    margin-right: 1em;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1em;
+}
+
+nav a {
+    padding: 0.5em;
+    border-radius: 5px;
+    color: var(--primary-color);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+}
+
+.nom-prenom {
+    font-size: 4em;
+    font-weight: 900;
+    text-align: center;
+    vertical-align: middle;
+    padding: 7vh 0;
+}
+
+/* Body */
+
+.accompagnement {
+    font-size: 1.5em;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Blocs de contenu */
+
+.two-images ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.two-images li {
+    display: flex;
+    align-items: flex-start;
+    width: calc(50% - 10px);
+}
+
+.two-images img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.two-images div {
+    display: flex;
+    flex-direction: column;
+}
+
+.two-images p {
+    margin: 0;
+}
+
+/* Footer */
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 3em;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--tertiary-color);
+    border-radius: 6px;
+}
+
+.footer-paragraph {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
