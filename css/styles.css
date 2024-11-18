@@ -42,9 +42,8 @@ a {
     color: var(--tertiary-color);
 }
 
-header, section, footer{
-    padding: 1em;
-    padding-left: 50px;
+section, footer {
+    padding: 1em 15em;
 }
 
 div {
@@ -104,10 +103,12 @@ p {
 
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    padding: 0 1em;
+    height: 56px;
     background-color: var(--tertiary-color);
     transition: background-color 0.5s ease;
 }
